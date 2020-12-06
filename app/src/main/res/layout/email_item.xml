@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="6dp">
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@android:color/holo_orange_dark"
+        android:src="@drawable/thumb1"
+        android:layout_centerVertical="true"
+        android:contentDescription="Avatar" />
+
+    <TextView
+        android:id="@+id/sender"
+        android:textStyle="bold"
+        android:layout_marginLeft="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/avatar"
+        android:layout_toLeftOf="@id/date"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Người gửi" />
+    <TextView
+        android:id="@+id/subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sender"
+        android:layout_alignLeft="@+id/sender"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_toLeftOf="@id/favorite"
+        android:text="Chủ đề"/>
+
+    <TextView
+        android:id="@+id/brief"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sender"
+        android:layout_alignLeft="@+id/sender"
+        android:layout_marginTop="22dp"
+        android:layout_toLeftOf="@id/favorite"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Nội dung" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:maxLines="1"
+        android:text="12:30 PM"/>
+    <ImageView
+        android:id="@+id/favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_baseline_star_24" />
+
+
+
+</RelativeLayout>
